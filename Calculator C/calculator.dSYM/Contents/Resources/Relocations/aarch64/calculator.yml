@@ -1,0 +1,13 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/abdullahshah/Desktop/Calculator C/calculator'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003470, symSize: 0x27C }
+  - { offset: 0x41, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003470, symSize: 0x27C }
+  - { offset: 0xC1, size: 0x8, addend: 0x0, symName: _performPowerOperation, symObjAddr: 0x27C, symBinAddr: 0x1000036EC, symSize: 0x48 }
+  - { offset: 0xF3, size: 0x8, addend: 0x0, symName: _displayResults, symObjAddr: 0x2C4, symBinAddr: 0x100003734, symSize: 0x38 }
+  - { offset: 0x117, size: 0x8, addend: 0x0, symName: _displayHistory, symObjAddr: 0x2FC, symBinAddr: 0x10000376C, symSize: 0xB8 }
+  - { offset: 0x165, size: 0x8, addend: 0x0, symName: _showMenu, symObjAddr: 0x3B4, symBinAddr: 0x100003824, symSize: 0x64 }
+  - { offset: 0x17A, size: 0x8, addend: 0x0, symName: _performBasicOperation, symObjAddr: 0x418, symBinAddr: 0x100003888, symSize: 0x160 }
+  - { offset: 0x1C8, size: 0x8, addend: 0x0, symName: _performTrigonometricOperation, symObjAddr: 0x590, symBinAddr: 0x100003A00, symSize: 0x17C }
+...

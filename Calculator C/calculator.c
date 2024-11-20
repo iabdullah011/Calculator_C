@@ -2,13 +2,11 @@
 #include <math.h>
 #include <string.h>
 
-// Structure to store history
 typedef struct {
     char name[50];
     double result;
 } Operation;
 
-// Function prototypes
 void showMenu();
 void performBasicOperation();
 void performTrigonometricOperation();
@@ -57,7 +55,6 @@ int main() {
     return 0;
 }
 
-// Display the menu
 void showMenu() {
     printf("\n===== Calculator Menu =====\n");
     printf("Type 'basic'   - Perform basic operations (+, -, *, /).\n");
@@ -68,7 +65,6 @@ void showMenu() {
     printf("===========================\n");
 }
 
-// Perform basic arithmetic operations
 void performBasicOperation() {
     double num1, num2, result;
     char op;
@@ -76,7 +72,7 @@ void performBasicOperation() {
     printf("Enter first number: ");
     scanf("%lf", &num1);
     printf("Enter operator (+, -, *, /): ");
-    scanf(" %c", &op); // Space before %c to handle newline character
+    scanf(" %c", &op); 
     printf("Enter second number: ");
     scanf("%lf", &num2);
 
@@ -105,7 +101,6 @@ void performBasicOperation() {
     printf("Result: %.2lf\n", result);
 }
 
-// Perform trigonometric operations
 void performTrigonometricOperation() {
     double angle, result;
     char trigFunc[10];
@@ -115,7 +110,7 @@ void performTrigonometricOperation() {
     printf("Enter angle in degrees: ");
     scanf("%lf", &angle);
 
-    double radians = angle * M_PI / 180.0; // Convert to radians
+    double radians = angle * M_PI / 180.0; 
 
     if (strcmp(trigFunc, "sin") == 0) {
         result = sin(radians);
@@ -130,17 +125,14 @@ void performTrigonometricOperation() {
     printf("Result: %.2lf\n", result);
 }
 
-// Perform power operation using pointers
 void performPowerOperation(double *base, double *exponent) {
     printf("Base: %.2lf, Exponent: %.2lf\n", *base, *exponent);
 }
 
-// Display results using pointers
 void displayResults(double *result) {
     printf("The result is: %.2lf\n", *result);
 }
 
-// Display calculation history
 void displayHistory(Operation history[], int count) {
     if (count == 0) {
         printf("No history available.\n");
